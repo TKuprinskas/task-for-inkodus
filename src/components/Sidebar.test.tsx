@@ -1,14 +1,13 @@
-// App.test.tsx
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import { store } from './state/store';
-import App from './App';
+import { store } from '../state/store';
+import Sidebar from './Sidebar';
 
-describe('App component', () => {
+describe('Sidebar component', () => {
   it('renders without crashing', () => {
     render(
       <Provider store={store}>
-        <App />
+        <Sidebar />
       </Provider>
     );
   });
